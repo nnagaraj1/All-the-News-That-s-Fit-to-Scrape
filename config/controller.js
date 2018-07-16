@@ -33,6 +33,7 @@ router.get("/articles", function(req, res) {
 router.get("/scrape", function(req, res) {
   request("https://www.nytimes.com/", function(req, res) {
     var $ = cheerio.load(html);
+    console.log($);
     // Grab items with "inner" class within "article" tag
     // $("article .inner").each(function(i, element){
     //     var res = {};

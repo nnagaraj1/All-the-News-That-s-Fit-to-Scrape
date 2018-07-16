@@ -42,10 +42,10 @@ var routes = require("./routes");
 routes.HTML(app);
 routes.API(app, db);
 
-// For errors
-app.use(function(req, res) {
-  res.render("Error 404");
-});
+// // For errors
+// app.use(function(req, res) {
+//   res.render("Error 404");
+// });
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
